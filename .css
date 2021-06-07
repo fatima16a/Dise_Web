@@ -1,0 +1,26 @@
+h1 {
+    font-family: cursive;
+    text-align: center;
+    text-decoration:underline;
+    }
+  p {
+    font-family: "Times New Roman";
+    text-align:start;
+  }
+  ul{
+    font-family: Star Wars;
+  }
+  .foto-p{
+    float:inline-start;
+  }
+  .foto-s{
+    float:right;
+  }
+  .redesS{
+  
+    float: unset;
+  }
+  .redesP{
+ 
+    float: unset;
+  }
