@@ -6,6 +6,7 @@ h1 {
   p {
     font-family: "Times New Roman";
     text-align:start;
+    float:inline-end;
   }
   ul{
     font-family: Star Wars;
