@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); 
+body {
+  background-image: url("https://www.logodesignlove.com/wp-content/uploads/2008/04/shell-signage-01.jpg");
+  margin: 0;
+  padding: 0;
+}
+ 
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Noto Sans JP";
+}
+ 
+.disenoCalculadora {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.resultado {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+ 
+.opcion-nafta {
+  display: block
+}
+ 
+select {
+  margin: auto;
+}
+ 
+h2 {
+  font-size: 2.2em;
+  padding-right: 1.5em;
+}
+ 
+.Calcula {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+ 
+form input:last-child {
+  margin-bottom: 2.5em;
+}
+ 
+#enter {
+  margin-bottom: 2em;
+}

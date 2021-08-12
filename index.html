@@ -1,43 +1,40 @@
-<DOCTYPE html>
-    <ht lang="es-ES">
-      <head>
-        <title>Pagina de precentacion</title>
-        <link rel="stylesheet" type="text/css" href="sty.css"/>
-        <link rel="stylesheet" href="js.js">
-      </head>
-      <body>
-        <style>
-          body {
-            background-color: FFADAD;
-          }
-          
-        </style>
-          <h1>Fatima Toloza</h1>
-        <div class="foto-s">
-          <img src="sentada.png"width="200" height="310">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Calculadora de Nafta </title>
+  </head>
+  <body>
+    <form>
+      <div class="disenoCalculadora">
+        <h1>Calculadora de la empresa Sell</h1>
+        <div class="opcion-nafta">
+          <h2>Tipo nafta:</h2>
+            <select id="select1">
+                <option value="1">Nafta Super 95E 30-S $65,47</option>
+                <option value="2">Nafta Premium 97E 30-S $67,80</option>
+                <option value="3">Gasoil 50-S $45,29</option>
+                <option value="4">Gasoil 10-S $67,87</option>
+            </select>
         </div>
-        <p>
-          Hola, me llamo Fatima Toloza, actualmente estoy cursando 5to TIC en <a href="https://anima.edu.uy/">Anima-Bachillerato Tecnolgico</a>.
-        </p>
-        <p>
-          En mis tiempos libres busco informacion para diseñar y/o crear paginas web. 
-          Me gustaria trabajar en el area de <a href="https://www.ironhack.com/es/diseno-ux-ui/que-es-y-que-hace-un-disenador-ux-ui">Diseño UI/UX</a> 
-        </p>
-        <p>Las tencnologias con las que trabajamos son:</p>
-        <ul>
-            <li>GitHub</li>
-            <li>Java</li>
-            <li>Virtual Box</li>
-            <li>Visual Studio Code</li>
-        </ul>
-        <div class="redes">
-          <a href="https://wa.me/59893700405"><img src="https://i.ibb.co/cDPBrSs/watpp.png" width="50" height="50"></a>
-          <a href="https://instagram.com/fatytoloza?igshid=13bdvdjfcu8i5"><img src="https://i.ibb.co/9tR2NXy/insatgram.png" width="50" height="50"></a>
-          <a href="mailto://fatima.toloza@anima.ed.uy"><img src="https://i.ibb.co/MShtLWS/descarga.png" width="50" height="50"></a>        
-          <a href="https://www.linkedin.com/in/fatima-toloza-3349251b4/"><img src="https://i.ibb.co/2FNmFyp/Linkedin.png" width="50" height="50"></a>
+        <div class="calcula">
+          <p>Ingrese el consumo por kilómetro (km/L):</p>
+          <input type="number" id="l/km" class="input" />
+          <p>Ingrese la cantidad de kilómetros que va a recorrer:</p>
+          <input type="number" id="km" class="input" />
         </div>
-        <div class="foto-p">
-          <img src="parada.jpg"width="200" height="310">
-        </div>
-      </body>
-    </html>
+        <button type="button" id="enter" onclick="calculadora()">
+          Calcula
+        </button>
+      </div>
+      <div class="resultado">
+        <h2>Usted necesitará:</h2>
+        <p id="naftaNecesaria"> litros de nafta</p>
+        <h2>El costo de su viaje será de:</h2>
+        <p id="costoViaje">$0</p>
+      </div>
+    </form>
+  </body>
+  <script src="js.js"></script>
+</html>
